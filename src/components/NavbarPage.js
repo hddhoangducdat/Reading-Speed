@@ -16,7 +16,8 @@ class NavbarPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapse: false
+      collapse: false,
+      edit: false
     };
     this.onClick = this.onClick.bind(this);
   }
@@ -29,29 +30,26 @@ class NavbarPage extends React.Component {
 
   render() {
     const bgPink = { backgroundColor: "#3f59cd" };
-
+    const { edit, ChangeEdit } = this.props;
     return (
       <div>
         <Router>
           <header>
             <MDBNavbar style={bgPink} dark expand="md" scrolling fixed="top">
               <MDBNavbarBrand href="/">
-                <strong>Navbar</strong>
+                <strong>Test Your Reading Speed</strong>
               </MDBNavbarBrand>
-              <MDBNavbarToggler onClick={this.onClick} />
+              <MDBNavbarToggler onClick={this.ChangeEdit} />
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav left>
-                  <MDBNavItem active>
-                    <MDBNavLink to="#">Home</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Features</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Pricing</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Options</MDBNavLink>
+                  <MDBNavItem onClick={() => ChangeEdit(!edit)} active>
+                    <MDBNavLink to="#">
+                      <i
+                        style={{ margin: "5px" }}
+                        className="fas fa-pencil-alt prefix"
+                      />{" "}
+                      EDIT
+                    </MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right>

@@ -38,9 +38,9 @@ class Card extends Component {
       <MDBCol>
         <MDBCard style={{ width: "67rem" }}>
           <MDBCardBody>
-            <MDBCardTitle>Thông số tốc độ đọc</MDBCardTitle>
+            <MDBCardTitle>Your Record</MDBCardTitle>
             <MDBCardText>
-              <div>Amount of words: {length} words</div>
+              <div>You have read {length} words</div>
               <div>
                 Second per word:{" "}
                 {runningTime !== 0 && !status

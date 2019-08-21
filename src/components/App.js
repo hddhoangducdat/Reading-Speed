@@ -26,14 +26,22 @@ class App extends Component {
     this.setState({ edit: ed });
   };
 
+  ChangeEdit = ed => {
+    this.setState({ edit: ed });
+  };
+
   render() {
     const container = { height: 1100 };
-    const { edit } = this.state;
+    const { length, edit } = this.state;
     return (
       <div>
-        <NavbarPage />
+        <NavbarPage ChangeEdit={this.ChangeEdit} edit={edit} length={length} />
         <MDBContainer style={container} className="text-center mt-5 pt-5">
-          <TextArea IsButton={this.IsButton} SetLength={this.SetLength} />
+          <TextArea
+            edit={edit}
+            IsButton={this.IsButton}
+            SetLength={this.SetLength}
+          />
           <br />
           {!edit ? <Card length={this.state.length} /> : ""}
           <Footer />

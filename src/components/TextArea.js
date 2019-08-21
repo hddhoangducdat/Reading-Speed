@@ -103,28 +103,31 @@ class TextareaPage extends React.Component {
   }
 
   render() {
-    const { arr, edit, length } = this.state;
-    const { SetLength, IsButton } = this.props;
+    const { arr, length } = this.state;
+    const { SetLength, edit, IsButton } = this.props;
     const renderdWord = arr.map(word => {
       return <Words SetLength={SetLength} word={word.str} vt={word.count} />;
     });
 
     return (
       <div className="input-group">
-        <button
-          onClick={() => {
-            SetLength(length);
-            this.setState({ edit: !edit });
+        {edit ? (
+          <button
+            onClick={() => {
+              SetLength(length);
+              this.setState({ edit: !edit });
 
-            this.updatearr();
-          }}
-          className="input-group-prepend"
-        >
-          <span className="input-group-text" id="basic-addon">
-            <i style={{ margin: "5px" }} className="fas fa-pencil-alt prefix" />{" "}
-            Edit
-          </span>
-        </button>
+              this.updatearr();
+            }}
+            className="input-group-prepend"
+          >
+            <span className="input-group-text" id="basic-addon">
+              Submit
+            </span>
+          </button>
+        ) : (
+          ""
+        )}
         <br />
         {edit ? (
           <textarea
