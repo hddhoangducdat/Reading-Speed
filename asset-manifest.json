@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Reading-Speed/static/css/main.390c4031.chunk.css",
+    "main.js": "/Reading-Speed/static/js/main.d00c61bd.chunk.js",
+    "main.js.map": "/Reading-Speed/static/js/main.d00c61bd.chunk.js.map",
+    "runtime~main.js": "/Reading-Speed/static/js/runtime~main.65d3d3cb.js",
+    "runtime~main.js.map": "/Reading-Speed/static/js/runtime~main.65d3d3cb.js.map",
+    "static/css/2.e5bb726c.chunk.css": "/Reading-Speed/static/css/2.e5bb726c.chunk.css",
+    "static/js/2.51b17e75.chunk.js": "/Reading-Speed/static/js/2.51b17e75.chunk.js",
+    "static/js/2.51b17e75.chunk.js.map": "/Reading-Speed/static/js/2.51b17e75.chunk.js.map",
+    "index.html": "/Reading-Speed/index.html",
+    "precache-manifest.91ab16fe19a22ca7478a139a5554028b.js": "/Reading-Speed/precache-manifest.91ab16fe19a22ca7478a139a5554028b.js",
+    "service-worker.js": "/Reading-Speed/service-worker.js",
+    "static/css/2.e5bb726c.chunk.css.map": "/Reading-Speed/static/css/2.e5bb726c.chunk.css.map",
+    "static/css/main.390c4031.chunk.css.map": "/Reading-Speed/static/css/main.390c4031.chunk.css.map",
+    "static/media/mdb.css": "/Reading-Speed/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/all.min.css": "/Reading-Speed/static/media/fa-solid-900.f14c3b2f.ttf"
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["Words.css"],"names":[],"mappings":"AAAA,OACE,wBAA0B,CAC1B,eACF,CAEA,aACE,qCACF","file":"main.390c4031.chunk.css","sourcesContent":[".Words {\n  display: inline !important;\n  margin-left: 5px;\n}\n\n.Words:hover {\n  background-color: #9ed323a4;\n}\n"]}
